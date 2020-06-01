@@ -1,0 +1,30 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>MybatisSqlLog</name>
+  <version>1.0</version>
+  <vendor email="coderelijah@126.com" url="">Elijah</vendor>
+
+  <description>formate mybatis sql.formate mybatis sql.formate mybatis sql.formate mybatis sql.</description>
+
+  <change-notes>formate mybatis sql.formate mybatis sql.formate mybatis sql.formate mybatis sql.</change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="MybatisSqlLog.FormateSqlAction" class="com.elijah.mybatissqllog.FormateSqlAction" text="FormateSql"
+            description="FormateSql">
+      <add-to-group group-id="EditMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt F"/>
+    </action>
+  </actions>
+
+</idea-plugin>
