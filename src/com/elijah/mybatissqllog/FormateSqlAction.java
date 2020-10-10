@@ -54,19 +54,13 @@ public class FormateSqlAction extends AnAction {
             sqlModel = sqlModel.replaceFirst("\\?", '\'' + param.trim() + '\'');
         }
         this.showPopupBalloon(mEditor, sqlModel);
-//        String[] values = new String[1];
-//        Messages.showEditableChooseDialog(
-//                "format sql:",
-//                "格式化",
-//                Messages.getInformationIcon(),values,sqlModel,null
-//        );
     }
 
     private void showPopupBalloon(final Editor editor, final String result) {
         ApplicationManager.getApplication().invokeLater(() -> {
             JBPopupFactory factory = JBPopupFactory.getInstance();
             factory.createHtmlTextBalloonBuilder(result, null, new JBColor(new Color(186, 238, 186), new Color(73, 117, 73)), null)
-                    .setTitle("format sql")
+                    .setTitle("format mybaits sql")
                     .setCloseButtonEnabled(true)
                     .setHideOnCloseClick(true)
                     .setDialogMode(true)
