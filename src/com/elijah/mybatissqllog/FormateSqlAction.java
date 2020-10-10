@@ -16,8 +16,8 @@ import javax.xml.validation.Validator;
 import java.awt.*;
 
 /**
- * Description:
- *
+ * Description: idea plugin to format sql by click right button
+ * 
  * @author elijahliu
  * @Note Talk is cheap,just show me ur code.- -!
  * ProjectName:MybatisSqlLog
